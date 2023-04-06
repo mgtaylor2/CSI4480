@@ -12,7 +12,7 @@
 <title>SQL Injection Login</title>
     <style>
   body {
-    background-image: url('Images/sql-injection.jpg');
+    background-image: url('sql-injection.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
