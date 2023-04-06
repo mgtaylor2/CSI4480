@@ -1,15 +1,9 @@
-<%-- 
-    Document   : Login
-    Created on : Apr 3, 2023, 7:10:52 PM
-    Author     : matthew
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>SQL Injection Login</title>
+<link rel="stylesheet" href="./style.css">
     <style>
   body {
     background-image: url('sql-injection.jpg');
@@ -18,20 +12,30 @@
     background-size: 100% 100%;
   }
   </style>
+<title>SQL Injection Proof Login</title>
+
+
 </head>
 <body>
-    <div style="text-align: center">
-        <h1>Login</h1>
-        <form action="Login" method="post">
+    <div class="Login1" style="text-align: center">
+        <h1 class="title">Secure Login</h1>
+        <form class="field2" action="Login" method="post">
             <label for="email">Email:</label>
-            <input name="email" size="30" />
+            <input class="input"name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" size="30" required />
             <br><br>
             <label for="password">Password:</label>
-            <input type="password" name="password" size="30" />
+            <input class="input" type="password" name="password" pattern=".{8,}" size="30" required />
             <br>${message}
             <br><br>
-            <button type="submit">Login</button>
+            <button class="loginbutton" type="submit">Login</button>
         </form>
     </div>
+    <h1 class="groupname2">group e</h1>
+    <h1 class="names2">Matthew Taylor
+        <br><br>
+        James Holloway
+        <br><br>
+        Stephen Placeway
+    </h1>
 </body>
 </html>
