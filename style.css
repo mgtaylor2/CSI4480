@@ -1,0 +1,52 @@
+.title{
+    color: white;
+}
+.Login1{
+border: 2px solid white;
+border-radius: 6px;
+}
+.Login2{
+    border: 2px solid #090808;
+    border-radius: 6px;
+    }
+
+.field1{
+    color: black;
+    font-size: 32px;
+}
+.field2{
+    color: white;
+    font-size: 32px;
+}
+.names1{
+    text-align: right;
+}
+.names2{
+    text-align: right;
+    color: white;
+}
+.groupname2{
+    color: white;
+}
+#form{
+    font-size: 20px;
+}
+.loginbutton{
+    height: 75px;
+    width: 100px;
+}
+.loginbutton:hover{
+    background-color: rgb(161, 34, 224);
+}
+.loginbutton2{
+    height: 75px;
+    width: 100px;
+}
+.loginbutton2:hover{
+    background-color: rgb(61, 82, 240);
+}
+.input{
+    font-size: 30px;
+    height: 50px;
+    width: 500px;
+}

@@ -1,9 +1,3 @@
-<%-- 
-    Document   : Login
-    Created on : Apr 3, 2023, 7:10:52 PM
-    Author     : matthew
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,7 +6,7 @@
 <link rel="stylesheet" href="./style.css">
     <style>
   body {
-    background-image: url('lock.png');
+    background-image: url('sql-injection.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -23,21 +17,21 @@
 
 </head>
 <body>
-    <div class="Login2" style="text-align: center">
-        <h1>Secure Login</h1>
-        <form class="field1" action="Login" method="post">
+    <div class="Login1" style="text-align: center">
+        <h1 class="title">Secure Login</h1>
+        <form class="field2" action="Login" method="post">
             <label for="email">Email:</label>
-            <input class="input" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" size="30" required />
+            <input class="input"name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" size="30" required />
             <br><br>
             <label for="password">Password:</label>
             <input class="input" type="password" name="password" pattern=".{8,}" size="30" required />
             <br>${message}
             <br><br>
-            <button class="loginbutton2" type="submit">Login</button>
+            <button class="loginbutton" type="submit">Login</button>
         </form>
     </div>
-    <h1 class="groupname">group e</h1>
-    <h1 class="names1">Matthew Taylor
+    <h1 class="groupname2">group e</h1>
+    <h1 class="names2">Matthew Taylor
         <br><br>
         James Holloway
         <br><br>
