@@ -9,6 +9,14 @@
 <html>
 <head>
 <meta charset="utf-8">
+    <style>
+  body {
+    background-image: url('lock.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  </style>
 <title>SQL Injection Proof Login</title>
 
 

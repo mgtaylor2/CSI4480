@@ -10,6 +10,14 @@
 <head>
 <meta charset="utf-8">
 <title>SQL Injection Login</title>
+    <style>
+  body {
+    background-image: url('sql-injection.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  </style>
 </head>
 <body>
     <div style="text-align: center">
