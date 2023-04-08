@@ -30,7 +30,7 @@
             <button class="loginbutton" type="submit">Login</button>
         </form>
     </div>
-    <h1 class="groupname2">group e</h1>
+    <h1 class="groupname2">The '; DROP Enthusiasts</h1>
     <h1 class="names2">Matthew Taylor
         <br><br>
         James Holloway
