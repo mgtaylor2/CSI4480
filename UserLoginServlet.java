@@ -38,20 +38,24 @@ public class UserLoginServlet extends HttpServlet {
         String Password = request.getParameter("password");
 
         //good DAO
-        UserDAO userDao = new UserDAO();
+     //   UserDAO userDao = new UserDAO();
         
         //bad DAO
-     //   BadDAO badDao = new BadDAO();
+        BadDAO badDao = new BadDAO();
        
         try {
             
-            User user = userDao.checkLogin(Email, Password);
+       //     User user = userDao.checkLogin(Email, Password);
             
-       //     User user = badDao.checkLogin(Email, Password);
+            User user = badDao.checkLogin(Email, Password);
             
          //   System.out.println(user.getEmail());
             
+    //non secure
             String destPage = "Login.jsp";
+            
+    //secure
+        //    String destPage = "LoginWithChecks.jsp";
             
             System.out.println("\n\n----\n" + user);
 

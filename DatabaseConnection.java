@@ -23,16 +23,30 @@ public class DatabaseConnection {
         // Database Connection
       //  String dbDriver = "com.mysql.jdbc.Driver";
         String dbDriver = "com.mysql.cj.jdbc.Driver";
-        String dbURL = "jdbc:mysql:// localhost:3306/";
+        
+        //exploit version:
+        String dbURL = "jdbc:mysql://localhost:3306/mydb?allowMultiQueries=TRUE";
+        
+        //normal version
+     //   String dbURL = "jdbc:mysql://localhost:3306/";
+        
+        
         // Database name to access
         String dbName = "mydb";
         String dbUsername = "root";
         String dbPassword = "MySQL2022!";
   
         Class.forName(dbDriver);
-        Connection con = DriverManager.getConnection(dbURL + dbName,
-                                                     dbUsername, 
-                                                     dbPassword);
+        
+        
+        //multiple payload injection connection
+        Connection con = DriverManager.getConnection(dbURL, dbUsername, dbPassword);
+        
+        //good connection
+     //   Connection con = DriverManager.getConnection(dbURL + dbName, dbUsername, dbPassword);
+
+
+        
         return con;
     }
 }
