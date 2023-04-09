@@ -23,17 +23,32 @@
 
 </head>
 <body>
-    <div class="Login2" style="text-align: center">
+    <div style="text-align: center">
         <h1>Secure Login</h1>
-        <form class="field1" action="Login" method="post">
+        <form action="Login" method="post">
             <label for="email">Email:</label>
-            <input class="input" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" size="30" required />
+            <input name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" size="30" required />
             <br><br>
             <label for="password">Password:</label>
-            <input class="input" type="password" name="password" pattern=".{8,}" size="30" required />
+            
+            <%--
+            Notes from https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern
+            
+            ^ = Start of the string requirement
+            (?!.*( insert restrictions ) = ?! meaning must NOT be in string
+            (?=.*( insert restrictions ) = ?= meaning MUST BE in string
+            .{#,} = # of characters required
+            $ = end of string requirements
+            
+            thus, (?!.*(--|;))... => ?!.* negative look ahead that checks if the string contains either "--" or (|) ";".
+            
+            We restrict -- and ; to prevent commenting out code, etc, even though already protected by Prepared Statements.
+            --%>
+            
+            <input type="password" name="password" pattern="^(?!.*(--|;)).{8,}$" size="30" required />
             <br>${message}
             <br><br>
-            <button class="loginbutton2" type="submit">Login</button>
+            <button type="submit">Login</button>
         </form>
     </div>
     <h1 class="groupname">The '; DROP Enthusiasts</h1>
